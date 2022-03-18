@@ -2,6 +2,18 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+.topmargin-xs{margin-top: 15px;}
+.topmargin-sm{margin-top: 30px;}
+.topmargin-lg{margin-top: 60px;}
+
+
+
+.navbar {
+    box-shadow: 2px 2px 5px black;
+    background-color: white;
+    min-height: 20px;
+}
+
 .navbar-brand{
     color: black;
     font-size: 22px;
@@ -53,12 +65,6 @@ body {
     position: relative;
 }
 
-.navbar {
-    box-shadow: 2px 2px 5px black;
-    opacity: .8;
-    background-color: white;
-    min-height: 10px;
-}
 
 .main-header {
     background: url(./img/rigssss.jpeg);
@@ -107,7 +113,12 @@ body {
 }
 
 .card{
-    border-radius: 100%;
+    border-radius: 5%;
+    min-width: 20px;
+}
+
+.card-img{
+    min-width: 20px;
 }
 
 video{
@@ -116,6 +127,7 @@ video{
 
 img{
     border-radius: .99%;
+    max-width: 20px;
 }
 
 iframe{
@@ -127,4 +139,18 @@ iframe{
     padding: 5px;
     text-align: center;
     background-color: white;
+}
+
+section{
+    padding: 120px 0;
+}
+
+
+
+/  /*PANTALLA DINAMICA*/
+@media (max-width: 400px) { 
+  h1 {font-size: 40px; line-height: normal;}
+  .content {
+    padding: 0 3rem 0 3rem;
+  }
 }
